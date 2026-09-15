@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EL Herbs and Spices Shop</title>
+  <style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f7faf5;color:#243322;line-height:1.6}
+header{position:sticky;top:0;z-index:10;background:#234d2c;color:#fff;box-shadow:0 2px 10px #0002}
+.header-inner{max-width:1100px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo-area{display:flex;align-items:center;gap:10px}.logo-icon{font-size:32px}
+h1{font-size:23px;margin:0}.tagline{margin:0;font-size:13px;color:#d7ead8}
+nav{display:flex;gap:18px;flex-wrap:wrap}nav a{color:#fff;text-decoration:none;font-weight:600;font-size:14px}
+main{max-width:1100px;margin:auto;padding:35px 20px}
+section{scroll-margin-top:100px;margin-bottom:55px}.section-title{text-align:center;color:#234d2c;font-size:30px;margin:0 0 25px}
+.product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.product-card{background:#fff;border-radius:14px;padding:22px;text-align:center;box-shadow:0 4px 15px #244d2c18;border:1px solid #dfe9dc;transition:.2s}
+.product-card:hover{transform:translateY(-4px);box-shadow:0 8px 20px #244d2c25}
+.product-img{font-size:48px;background:#eef6e9;border-radius:12px;padding:14px;margin-bottom:12px}
+.product-img.photo{padding:0;overflow:hidden;height:120px}.product-img.photo img{width:100%;height:100%;object-fit:cover;display:block}.product-card h3{margin:8px 0 2px;color:#234d2c}.origin{color:#6d8168;font-size:13px;margin:0 0 10px}.desc{font-size:14px;color:#566353;min-height:68px}.price{display:inline-block;background:#234d2c;color:#fff;padding:7px 13px;border-radius:20px;font-weight:bold}
+.table-wrapper{overflow-x:auto;background:#fff;border-radius:12px;box-shadow:0 4px 15px #244d2c18}
+table{width:100%;border-collapse:collapse;min-width:650px}th,td{padding:13px 16px;text-align:left;border-bottom:1px solid #e4e9e1}th{background:#234d2c;color:#fff}tr:last-child td{border-bottom:0}
+.form-wrapper{max-width:650px;margin:auto;background:#fff;padding:28px;border-radius:14px;box-shadow:0 4px 15px #244d2c18}
+.form-group{margin-bottom:17px}.form-group label{display:block;font-weight:600;margin-bottom:6px}
+input,select,textarea{width:100%;padding:11px 12px;border:1px solid #cbd7c7;border-radius:8px;font:inherit;background:#fbfdf9}
+input:focus,select:focus,textarea:focus{outline:2px solid #8bb58c;border-color:#5f9465}
+.submit-btn{width:100%;border:0;border-radius:8px;padding:12px;background:#234d2c;color:#fff;font-weight:bold;font-size:16px;cursor:pointer}.submit-btn:hover{background:#183a20}
+footer{text-align:center;background:#1d3f24;color:#eaf4e9;padding:25px 15px}.footer-note{color:#bcd2bd;font-size:13px}
+@media(max-width:700px){.header-inner{flex-direction:column;align-items:flex-start}nav{gap:10px}h1{font-size:20px}.section-title{font-size:25px}}
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo-area">
+        <span class="logo-icon">🌿</span>
+        <div>
+          <h1>EL Herbs &amp; Spices</h1>
+          <p class="tagline">Pure. Natural. Kerala.</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#products">Our Products</a>
+        <a href="#pricelist">Price List</a>
+        <a href="#enquiry">Enquiry</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Products Section -->
+    <section id="products">
+      <h2 class="section-title">Our Products</h2>
+      <div class="product-grid">
+
+        <div class="product-card">
+          <div class="product-img">🌾</div>
+          <h3>Turmeric Powder</h3>
+          <p class="origin">Wayanad, Kerala</p>
+          <p class="desc">Rich golden turmeric, stone-ground for maximum curcumin potency.</p>
+          <span class="price">₹120 / 100g</span>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">⚫</div>
+          <h3>Black Pepper</h3>
+          <p class="origin">Idukki, Kerala</p>
+          <p class="desc">Bold, aromatic whole peppercorns from the spice capital of India.</p>
+          <span class="price">₹250 / 100g</span>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">🟢</div>
+          <h3>Cardamom</h3>
+          <p class="origin">Thekkady, Kerala</p>
+          <p class="desc">Hand-picked green cardamom with an intense, sweet floral aroma.</p>
+          <span class="price">₹480 / 100g</span>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">🟤</div>
+          <h3>Cinnamon Sticks</h3>
+          <p class="origin">Thrissur, Kerala</p>
+          <p class="desc">True Ceylon cinnamon with a delicate, warm sweetness.</p>
+          <span class="price">₹180 / 100g</span>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">🌰</div>
+          <h3>Cloves</h3>
+          <p class="origin">Kozhikode, Kerala</p>
+          <p class="desc">Sun-dried whole cloves with a deep, pungent warmth.</p>
+          <span class="price">₹210 / 100g</span>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">🌿</div>
+          <h3>Cumin Seeds</h3>
+          <p class="origin">Palakkad, Kerala</p>
+          <p class="desc">Earthy, nutty cumin seeds — essential to Kerala cooking.</p>
+          <span class="price">₹150 / 100g</span>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">🟠</div>
+          <h3>Coriander Powder</h3>
+          <p class="origin">Kannur, Kerala</p>
+          <p class="desc">Freshly ground coriander with a citrusy, mild flavour.</p>
+          <span class="price">₹130 / 100g</span>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">🔴</div>
+          <h3>Bay Leaf</h3>
+          <p class="origin">Munnar, Kerala</p>
+          <p class="desc">Dried bay leaves that add a subtle herbal depth to any dish.</p>
+          <span class="price">₹90 / 50g</span>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">🟡</div>
+          <h3>Fenugreek Seeds</h3>
+          <p class="origin">Palakkad, Kerala</p>
+          <p class="desc">Slightly bitter, maple-scented seeds that enrich Kerala curries and pickles.</p>
+          <span class="price">₹110 / 100g</span>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">⭐</div>
+          <h3>Star Anise</h3>
+          <p class="origin">Thrissur, Kerala</p>
+          <p class="desc">Star-shaped pods with a bold licorice flavour — essential in biryanis and masalas.</p>
+          <span class="price">₹320 / 100g</span>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img" style="padding:0;overflow:hidden;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Mustard_seed_closeup.jpg"
+       alt="Mustard seeds"
+       style="width:100%;height:120px;object-fit:cover;display:block;"
+       onerror="this.style.display='none';this.parentElement.textContent='🌱';this.parentElement.style.padding='14px';" />
+</div>
+          <h3>Mustard Seeds</h3>
+          <p class="origin">Kannur, Kerala</p>
+          <p class="desc">Tiny black seeds that pop and crackle in hot oil, releasing a nutty depth.</p>
+          <span class="price">₹95 / 100g</span>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">🟫</div>
+          <h3>Nutmeg</h3>
+          <p class="origin">Kozhikode, Kerala</p>
+          <p class="desc">Warm, sweet-spicy nutmeg — freshly grated over desserts, meats, and beverages.</p>
+          <span class="price">₹560 / 100g</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Price List Section -->
+    <section id="pricelist">
+      <h2 class="section-title">Price List</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price (₹)</th>
+              <th>Category</th>
+              <th>Availability</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Turmeric Powder</td>
+              <td>120</td>
+              <td>Spice Powder</td>
+              <td>In Stock</td>
+            </tr>
+            <tr>
+              <td>Black Pepper</td>
+              <td>250</td>
+              <td>Whole Spice</td>
+              <td>In Stock</td>
+            </tr>
+            <tr>
+              <td>Cardamom</td>
+              <td>480</td>
+              <td>Whole Spice</td>
+              <td>In Stock</td>
+            </tr>
+            <tr>
+              <td>Cinnamon Sticks</td>
+              <td>180</td>
+              <td>Whole Spice</td>
+              <td>In Stock</td>
+            </tr>
+            <tr>
+              <td>Cloves</td>
+              <td>210</td>
+              <td>Whole Spice</td>
+              <td>In Stock</td>
+            </tr>
+            <tr>
+              <td>Cumin Seeds</td>
+              <td>150</td>
+              <td>Seed Spice</td>
+              <td>In Stock</td>
+            </tr>
+            <tr>
+              <td>Coriander Powder</td>
+              <td>130</td>
+              <td>Spice Powder</td>
+              <td>In Stock</td>
+            </tr>
+            <tr>
+              <td>Bay Leaf</td>
+              <td>90</td>
+              <td>Dried Herb</td>
+              <td>In Stock</td>
+            </tr>
+            <tr>
+              <td>Fenugreek Seeds</td>
+              <td>110</td>
+              <td>Seed Spice</td>
+              <td>In Stock</td>
+            </tr>
+            <tr>
+              <td>Star Anise</td>
+              <td>320</td>
+              <td>Whole Spice</td>
+              <td>In Stock</td>
+            </tr>
+            <tr>
+              <td>Mustard Seeds</td>
+              <td>95</td>
+              <td>Seed Spice</td>
+              <td>In Stock</td>
+            </tr>
+            <tr>
+              <td>Nutmeg</td>
+              <td>560</td>
+              <td>Whole Spice</td>
+              <td>In Stock</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Enquiry Form Section -->
+    <section id="enquiry">
+      <h2 class="section-title">Ask Us About a Product</h2>
+      <div class="form-wrapper">
+        <form>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" />
+          </div>
+
+          <div class="form-group">
+            <label for="product">Product of Interest</label>
+            <select id="product" name="product">
+              <option value="">-- Select a product --</option>
+              <option value="turmeric">Turmeric Powder</option>
+              <option value="pepper">Black Pepper</option>
+              <option value="cardamom">Cardamom</option>
+              <option value="cinnamon">Cinnamon Sticks</option>
+              <option value="cloves">Cloves</option>
+              <option value="cumin">Cumin Seeds</option>
+              <option value="coriander">Coriander Powder</option>
+              <option value="bayleaf">Bay Leaf</option>
+              <option value="fenugreek">Fenugreek Seeds</option>
+              <option value="staranise">Star Anise</option>
+              <option value="mustard">Mustard Seeds</option>
+              <option value="nutmeg">Nutmeg</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="quantity">Quantity Required (grams)</label>
+            <input type="number" id="quantity" name="quantity" placeholder="e.g. 500" min="50" step="50" />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Question</label>
+            <textarea id="message" name="message" rows="4" placeholder="Type your question here..."></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Enquiry</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>🌿 EL Herbs and Spices Shop &mdash; Market Road, Kochi, Kerala</p>
+    <p>Open Monday–Saturday &nbsp;|&nbsp; 9:00 AM – 6:00 PM</p>
+    <p class="footer-note">Fresh from Kerala's spice gardens to your kitchen.</p>
+    <p style="font-size:11px;color:#bcd2bd">Mustard seed photo: Chris Pine / Wikimedia Commons, CC BY-SA 3.0</p>
+  </footer>
+
+  <script>
+document.querySelector("form").addEventListener("submit", function(e){
+  e.preventDefault();
+  const name = document.getElementById("name").value.trim();
+  const product = document.getElementById("product").value;
+  if(name && product){
+    alert("Thank you, " + name + "! Your enquiry has been recorded.");
+    this.reset();
+  }
+});
+</script>
+</body>
+</html>
