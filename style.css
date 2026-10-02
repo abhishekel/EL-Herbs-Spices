@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; margin: 0; background: #f6f3ea; color: #2b2b2b; }
+header { display: flex; align-items: center; gap: 16px; padding: 12px 24px; background: #2e5d34; color: #fff; }
+header a { color: #ffe9a8; margin-left: auto; }
+main { padding: 20px 24px; }
+.highlight { color: #ffd54f; text-decoration: underline; }
+.message { min-height: 22px; color: #2e5d34; font-weight: bold; }
+.controls { display: flex; gap: 10px; margin-bottom: 16px; }
+.controls input { flex: 1; padding: 8px; }
+.controls select, button { padding: 8px 12px; }
+button { background: #2e5d34; color: #fff; border: 0; border-radius: 4px; cursor: pointer; }
+button:disabled { background: #999; cursor: not-allowed; }
+
+#productGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 16px; }
+.card { background: #fff; border-radius: 8px; padding: 14px; box-shadow: 0 1px 4px rgba(0,0,0,.15); transition: transform .2s; }
+.card h3 { margin: 0 0 8px; }
+.card p { margin: 4px 0; }
+.card.zoom { transform: scale(1.06); box-shadow: 0 6px 14px rgba(0,0,0,.25); }
+.card.out-of-stock { opacity: .5; background: #eee; }
+
+section { margin-top: 28px; max-width: 480px; }
+form { display: flex; flex-direction: column; gap: 4px; }
+input, textarea { padding: 8px; border: 1px solid #aaa; border-radius: 4px; }
+input.invalid { border-color: #c62828; }
+.error { color: #c62828; font-size: 13px; min-height: 16px; }
+#preview { margin-top: 8px; padding: 8px; border: 1px dashed #888; min-height: 30px; }
+
+/* admin page */
+#taskList li { display: flex; justify-content: space-between; margin: 6px 0; padding: 6px 10px; background: #fff; border-radius: 4px; }
